@@ -27,7 +27,7 @@ const CreationScreen = ({ navigation }) => {
         title="Create BlogPost"
         onPress={() => {
           addBlogPost(title, content, () => {
-            navigation.navigate("Index");
+            navigation.goBack();
           });
         }}
       />
